@@ -22,7 +22,7 @@
     "@mui/icons-material": "^5.15.14",
     "@mui/material": "^5.15.14",
     "@nextui-org/react": "^2.4.8",
-    "@novu/node": "^0.23.1",
+    "@novu/node": "^2.0.1",
     "@remotion/bundler": "4.0.56",
     "@remotion/cloudrun": "4.0.56",
     "@remotion/gif": "4.0.56",

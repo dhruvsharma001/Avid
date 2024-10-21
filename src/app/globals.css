@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-rgb: 255 255 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 17, 28;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-rgb: 255 255 255;
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 17, 28;
+  }
+}
+
+body {
+  color: rgb(var(--text-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.avid-text-gradient {
+  background: linear-gradient(113deg, #e23cff 59.91%, #0a5ff9 86.21%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Razorpay */
+.razorpay-container-override {
+  top: 8vw !important;
+  left: 38vw !important;
+  height: 550px !important;
+  width: 400px !important;
+}
+
+/* Phone Input */
+.PhoneInputInput {
+  background-color: transparent;
+  border: 1px solid #334149;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Disable selection of background assets */
+.selectDisable {
+  z-index: 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  /* avid-gray-400 */
+  background-color: #334149;
+}
+
+::-webkit-scrollbar-thumb {
+  /* avid-accent */
+  background-color: #0a5ff9;
+}
+
+/* Image carousel */
+.embla {
+  --slide-height: 19rem;
+
+  --slide-size: calc(100% / 1.5);
+  --slide-size-sm: calc(100% / 2.5);
+  --slide-size-lg: calc(100% / 3.5);
+  --slide-size-xl: calc(100% / 6);
+
+  --slide-spacing: 1rem;
+  --slide-spacing-sm: 1rem;
+  --slide-spacing-lg: 1.6rem;
+  --slide-spacing-xl: 2rem;
+
+  --text-high-contrast-rgb-value: 219, 95%, 51%;
+  --text-body: hsl(219, 95%, 51%);
+}
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+@media (min-width: 640px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+}
+@media (min-width: 768px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing-sm) * -1);
+  }
+}
+@media (min-width: 1000px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing-lg) * -1);
+  }
+}
+@media (min-width: 1200px) {
+  .embla__container {
+    margin-left: calc(var(--slide-spacing-xl) * -1);
+  }
+}
+.embla__slide {
+  color: hsl(219, 95%, 51%);
+  min-width: 0;
+  flex: 0 0 var(--slide-size);
+  padding-left: var(--slide-spacing);
+}
+@media (min-width: 640px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size);
+    padding-left: var(--slide-spacing);
+  }
+}
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size-sm);
+    padding-left: var(--slide-spacing-sm);
+  }
+}
+@media (min-width: 1000px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size-lg);
+    padding-left: var(--slide-spacing-lg);
+  }
+}
+@media (min-width: 1200px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size-xl);
+    padding-left: var(--slide-spacing-xl);
+  }
+}
+.embla__slide__number {
+  height: var(--slide-height);
+}
+.embla__button {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: none;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 1;
+  border-radius: 50%;
+  color: var(--text-body);
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1000px) {
+  .embla__button {
+    display: inline-flex;
+  }
+}
+.embla__button:disabled {
+  color: var(--detail-high-contrast);
+}
+.embla__button__svg {
+  width: 35%;
+  height: 35%;
+}
+.embla__progress {
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 1.8rem;
+  background-color: #0d1d28;
+  position: relative;
+  height: 0.3rem;
+  justify-self: center;
+  align-self: center;
+  width: 13rem;
+  max-width: 90%;
+  overflow: hidden;
+}
+.embla__progress__bar {
+  background-color: var(--text-body);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+}

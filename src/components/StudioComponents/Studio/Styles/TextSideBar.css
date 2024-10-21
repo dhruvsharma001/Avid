@@ -1,0 +1,397 @@
+.TextSideBar {
+   padding-right: 15px;
+   padding-bottom: 20px;
+}
+
+.TextSideBar-Heading {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.TextSideBar-Heading-Btn {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 5px;
+   color: #a4abb1;
+}
+
+.TextSideBar-Heading-Btn-Text {
+   font-size: 13px;
+}
+
+.TextSideBar-Heading-Btn-Icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.TextSideBar-Heading-Btn-Icon svg {
+   font-size: 17px;
+}
+
+.TextBar-Line {
+   margin: 20px 0;
+   border-color: #383737;
+}
+
+.TextSideBar-ColorContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 18px;
+   margin-top: 10px;
+}
+
+.Color-Type {
+   border: 1px solid #ffffff54;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 10px;
+   padding: 5px 8px;
+   background-color: #213245;
+   cursor: pointer;
+}
+
+.Color-Type-Text {
+   font-size: 14px;
+}
+
+.Color-Type-Icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Color-Type-Icon svg {
+   font-size: 18px;
+}
+
+.Color-Code {
+   border: 1px solid #ffffff54;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 10px;
+   background-color: #213245;
+   border-radius: 10px;
+   height: 30px;
+   position: relative;
+}
+
+.Color-Code-Color {
+   border-radius: 10px 0 0 10px;
+   height: 30px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: -2px;
+}
+.Color-Code-Value {
+   width: 40%;
+    text-align: left;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    left: 24%;
+    position: absolute;
+}
+input[type="color"]::-webkit-color-swatch {
+   border:  none !important; /* Remove default border */
+   border-radius:10px 0px 0 10px !important; /* Example border radius */
+   /* background: #000; */
+ }
+
+.Color-Palette {
+   border: 1px solid #52525282;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 7px;
+   background-color: #213245;
+   padding: 15px 13px;
+   border-radius: 12px;
+}
+
+.Color-Palette-Box {
+   height: 35px;
+   background-color: purple;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.TextSideBar-FontStyle-Container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 18px;
+}
+
+.Font-Size {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.Font-Size p {
+   font-size: 16px;
+}
+
+.Font-Size input {
+   width: 30%;
+   border-radius: 6px;
+   padding-left: 10px;
+   font-size: 14px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   background-color: #213245;
+}
+
+.Font-Family {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.Font-Family-Upper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.Font-Family-Upper p {
+   font-size: 16px;
+}
+
+.Font-Family-Change {
+   color: #a4abb1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: default;
+}
+
+.Font-Family-Change-Icon svg {
+   font-size: 18px;
+}
+
+.Font-Family-Change-Text {
+   font-size: 12px;
+   margin-left: 5px;
+}
+
+.Font-Family-Lower {
+   background-color: #213245;
+   padding: 8px 10px;
+   border-radius: 10px;
+   font-size: 20px;
+}
+
+.Font-Alignment {
+   background-color: #213245;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2px 12px;
+   border-radius: 12px;
+}
+
+.Font-Alignment-Icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3px 20px;
+   border-radius: 13px;
+   cursor: pointer;
+}
+.Font-Alignment-Icon-Active{
+   background-color: #fff;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Alignment-Icon:hover {
+   background-color: #fff;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Alignment-Icon:hover.Font-Alignment-Icon svg {
+   color: #000;
+   transition: 0.4s ease-in-out;
+}
+
+
+.Font-Alignment-Icon svg {
+   font-size: 25px;
+   color: #a4abb1;
+}
+
+.Font-Alignment-Icon .Font-Alignment-Icon-Svg-Active{
+   color: #000;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Style {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.Font-Style-Icon {
+   border: 1px solid #383737;
+   padding: 4px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.Font-Style-Icon-Active{
+   border: 1px solid #0344a4;
+   background-color: #0a5efb14;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Style-Icon:hover {
+   border: 1px solid #0344a4;
+   background-color: #0a5efb14;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Style-Icon:hover.Font-Style-Icon svg {
+   color: #0344a4;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Style-Icon-Svg-Active{
+   color: #0344a4;
+   transition: 0.4s ease-in-out;
+}
+
+.Font-Style-Icon svg {
+   font-size: 33px;
+   padding: 5px;
+}
+
+.TextSideBar-Font-Effects {
+   margin-top: 10px;
+}
+
+.TextSideBar-Font-Effects h2 {
+   font-size: 16px;
+}
+
+.Font-Effects-Container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 8px;
+   margin-top: 10px;
+}
+
+.Font-Effects-Container-Box {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   cursor: pointer;
+}
+
+.Font-Effects-Container-Box:hover .Effect-Box {
+   border: 2px solid #fffefe;
+   transition: 0.3s ease-in-out;
+}
+
+.Font-Effects-Container-Box .Effect-Box-Active{
+   border: 2px solid #fffefe;
+   transition: 0.3s ease-in-out;
+}
+.Effect-Box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #383737;
+   height: 65px;
+   border-radius: 10px;
+   font-weight: bold;
+   background: #35456c;
+   color: #000;
+   font-size: 26px;
+}
+
+.Font-Effects-Container-Box p {
+   text-align: center;
+   font-size: 13px;
+   color: #a4abb1;
+}
+
+.TextSideBar-Alignment-Container {
+   margin-top: 10px;
+}
+
+.TextSideBar-Alignment-Container p {
+   font-size: 16px;
+}
+
+.Alignment-Button-Container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.Center-Alignment{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 7px;
+   flex: 0.5;
+   border: 1px solid #383737;
+   color: #a4abb1;
+   padding: 7px 0;
+   border-radius: 10px;
+}
+.Center-Alignment-Active{
+   border-color: #fff;
+   color: #fff;
+   transition: 0.4s ease-in-out;
+}
+.Alignment-Btn-Icon-Svg-Active{
+   color: #fff;
+   transition: 0.4s ease-in-out;
+}
+
+.Center-Alignment:hover .Alignment-Btn-Icon svg {
+   color: #fff;
+   transition: 0.4s ease-in-out;
+} 
+
+.Center-Alignment:hover .Alignment-Btn-Text {
+   color: #fff;
+   transition: 0.4s ease-in-out;
+}
+
+.Alignment-Btn-Icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Alignment-Btn-Icon svg {
+   font-size: 15px;
+   color: #a4abb1;
+}
+
+.Alignment-Btn-Text {
+   font-size: 14px;
+}
+
+
+.TextSideBar-Heading h2 {
+   font-size: 18px;
+   font-weight: bold;
+}

@@ -1,0 +1,59 @@
+.Right-Container{
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 10px;
+  height: calc(100vh - 90px);
+}
+
+.Right-Content-Wrapper {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Icons-Container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #213246;
+  gap: 5px;
+}
+
+.Icons-Container-Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a4abb1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Icons-Container-Icon:hover {
+ background-color: #0a60fb;
+ color: #fff;
+ transition:  0.4s ease-in-out;
+}
+
+.Icons-Active{
+  background-color: #0a60fb;
+  color: #fff;
+}
+
+.Icons-Container-Icon svg {
+  font-size: 27px;
+  padding: 2px;
+}
+
+
+
+@media screen and (max-width: 1330px) {
+  .Right-Container{
+    flex: 0.1;
+  }
+}

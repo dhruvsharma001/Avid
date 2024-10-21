@@ -1,0 +1,99 @@
+.Audio-Container {
+    width: 100%;
+    /* overflow-y: scroll; */
+}
+
+.Audio-Heading {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 14px;
+}
+
+.Audio-Text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Audio-Content-Container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Background-Music-Text {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+.Range-Slider-Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Range-Slider-Wrapper span{
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+}
+
+.Range-Slider-Wrapper input{
+    width: 100%;
+}
+
+.Sound-Effect-Text, .Voice-Over-Text {
+    font-size: 14px;
+    color: gray;
+}
+
+.Upload-Audio-Wrapper {
+    height: 120px;
+    border: 1px dotted #fff;
+    border-radius: 10px;
+    width: 100%;
+     background: transparent;
+    position: relative;
+    margin-bottom: 10px;
+}
+.Upload-Audio-Content{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.Upload-Audio-Content svg{
+    width: 100%;
+    margin: auto;
+}
+
+.Upload-Audio-Content p{
+    color: #fff;
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+}
+
+.Generate-Voice-Btn-Wrapper {
+    background-color: #213245;
+    border-radius: 8px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Generate-Voice-Btn {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.Generate-Voice-Btn svg{
+    font-size: 14px;
+}

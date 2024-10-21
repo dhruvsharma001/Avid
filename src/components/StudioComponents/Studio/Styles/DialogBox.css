@@ -1,0 +1,110 @@
+.Dialog-Overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    border-radius: 15px;
+    border: 1px solid #252525;
+    background-color: #0000003b;
+    backdrop-filter: blur(3px);
+}
+.Dialog-Box{
+    width: 80%;
+    display: flex;
+    background-color: rgb(0 17 28);
+    border: 1px solid rgb(41, 41, 43);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 15px;
+}
+.Dialog-LeftBar{
+    height: 100%;
+    border-radius: 10px;
+    background-color: #213244;
+    flex: 0.2;
+    padding: 15px 0;
+}
+.Dialog-LeftBar-MenuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 13px;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0 6px;
+    color: #a4abb1;
+}
+.Dialog-LeftBar-MenuItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 9px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+.Dialog-LeftBar-MenuItem:hover{
+    background-color: #0a60fb;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.Dialog-RightBar-Container{
+    border: 1px solid #41484c;
+    border-radius: 12px;
+    flex: 0.8;
+    padding: 15px;
+}
+.Dialog-RightBar{
+    background-color: rgb(0 17 28);
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    border-radius: 15px;
+    gap: 10px;
+    margin-top: 12px;
+}
+.DialogBox-Text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.DialogBox-CrossButton {
+    cursor: pointer;
+    padding: 3px 4px;
+    border-radius: 50%;
+}
+.DialogBox-CrossButton:hover {
+    background: #213244;
+    transition: background-color 0.4s ease-in-out;
+}
+.DialogBox-CrossButton svg{
+    font-size: 18px;
+}
+.Dialog-Items{
+   height: 170px;
+   width: 100%;
+   background-color: rgb(32 50 67);
+   border-radius: 8px;
+   border: 2px solid #41484c;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.selected{
+    background-color: #0a60fb;
+    color: white;
+}
+
+.Dialog-Items-Media-Video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

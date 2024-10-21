@@ -1,0 +1,209 @@
+.Background-Container {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.Background-Heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Background-Heading h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Background-Heading-Btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: #a4abb1;
+}
+
+.Background-Heading-Btn-Text {
+  font-size: 13px;
+}
+
+.Background-Heading-Btn-Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Background-Heading-Btn-Icon svg {
+  font-size: 17px;
+}
+
+.Background-Color-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.Background-Color-Type {
+  border: 1px solid #ffffff54;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px 8px;
+  background-color: #213245;
+  cursor: pointer;
+}
+
+.Background-Color-Type-Text {
+  font-size: 14px;
+}
+
+.Background-Color-Type-Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Background-Color-Type-Icon svg {
+  font-size: 18px;
+}
+
+.Background-Color-Code {
+  border: 1px solid #ffffff54;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background-color: #213245;
+  border-radius: 10px;
+  height: 30px;
+  position: relative;
+}
+
+.Background-Color-Code-Color {
+  /* background-color: white;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  flex: 0.25; */
+  border-radius: 10px 0 0 10px;
+   height: 30px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: -2px;
+}
+
+.Background-Color-Code-Value {
+  /* flex: 0.75;
+  text-align: left;
+  font-size: 15px;
+  background: transparent;
+  outline: none; */
+  width: 40%;
+    text-align: left;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    left: 24%;
+    position: absolute;
+}
+
+.Background-Color-Palette {
+  border: 1px solid #52525282;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  background-color: #213245;
+  padding: 15px 13px;
+  border-radius: 12px;
+}
+
+.Background-Color-Palette-Box {
+  height: 35px;
+  background-color: purple;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Background-Line {
+  margin: 20px 0;
+  border-color: #383737;
+}
+
+.Background-Gradients-Wrapper {
+  margin-top: 20px;
+}
+
+.Background-Gradients-Wrapper p {
+  font-size: 16px;
+  color: #a4abb1;
+}
+
+.Background-Gradients-Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.Background-Gradient {
+  height: 70px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.Background-Gradient video {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.Background-Media-Btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+  background-color: #213245;
+  padding: 5px 0;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #ffffff54;
+  margin-top: 25px;
+}
+
+.Background-Media-Btn:hover {
+  background-color: #194981;
+  transition: 0.4s ease-in-out;
+}
+
+.Background-Media-Btn:hover .Background-Media-Btn-Icon svg {
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+.Background-Media-Btn:hover .Background-Media-Btn-Text {
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.Background-Media-Btn-Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Background-Media-Btn-Icon svg {
+  font-size: 18px;
+  color: #a4abb1;
+}
+
+.Background-Media-Btn-Text {
+  font-size: 14px;
+  color: #a4abb1;
+}

@@ -1,0 +1,23 @@
+.Clipify-Main-Container {
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-color:#00111b;
+}
+
+.Clipify-Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1330px) {
+    .Clipify-Container{
+        padding: 0 5px;
+        gap: 8px;
+    }
+}

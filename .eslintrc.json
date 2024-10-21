@@ -1,0 +1,33 @@
+{
+  "extends": "next/core-web-vitals",
+  "overrides": [
+    //...your overrides
+    {
+      // Force the setting of a swagger description on each api endpoint
+      "files": ["pages/api/**/*.ts"],
+      "plugins": ["jsdoc"],
+      "rules": {
+        "unused-imports/no-unused-imports": "error",
+        "jsdoc/no-missing-syntax": [
+          "error",
+          {
+            "contexts": [
+              {
+                "comment": "JsdocBlock:has(JsdocTag[tag=swagger])",
+                "context": "any",
+                "message": "@swagger documentation is required on each API. Check this out for syntax info: https://github.com/jellydn/next-swagger-doc"
+              }
+            ]
+          }
+        ],
+        "jsdoc/check-alignment": 1,
+        "jsdoc/check-param-names": 1, // Recommended
+        "jsdoc/check-property-names": 1, // Recommended
+        "jsdoc/check-tag-names": 1, // Recommended
+        "jsdoc/check-types": 1, // Recommended
+        "jsdoc/check-values": 1, // Recommended
+        "jsdoc/empty-tags": 1 // Recommended
+      }
+    }
+  ]
+}

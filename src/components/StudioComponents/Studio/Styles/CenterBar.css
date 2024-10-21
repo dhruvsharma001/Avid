@@ -1,0 +1,413 @@
+.Center-Container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #162731;
+  border-top: none;
+  width: 60%;
+  color: white;
+  height: calc(100vh - 70px);
+}
+
+.Center-Container-Header {
+  border-bottom: 2px solid #162731;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 13px 8px;
+}
+
+.ProjectName {
+  text-decoration: underline;
+  background: transparent;
+  padding: 6px;
+  border: 1px solid #213244;
+  border-radius: 10px;
+  outline: none;
+  text-indent: 5px;
+}
+
+.ProjectName::placeholder {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.Center-Container-Header-Right {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.Center-Container-Header-Right-First {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
+
+.Auto-Improve {
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #a4abb1;
+  cursor: pointer;
+}
+
+.Auto-Improve-Icon svg {
+  font-size: 18px;
+}
+
+.Auto-Improve-Text {
+  font-size: 13px;
+}
+
+.Center-Container-Header-Right-Second {
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+.Center-Container-Header-Item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Center-Container-Header-Item-Icon svg {
+  font-size: 24px;
+  color: #a4abb1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Center-Container-Header-Item-Text {
+  font-size: 13.5px;
+  color: #a4abb1;
+}
+
+.Center-Container-MainFrame {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 13px 0;
+}
+
+.Center-Container-MainFrame-topBtns {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+.Undo-Redo-Btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Undo-Redo-Btns svg {
+  font-size: 23px;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+.Line {
+  height: 30px;
+  border: 1px solid #162731;
+}
+
+.First-Btn {
+  background-color: #213245;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+.First-Btn svg {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.First-Btn-Text {
+  font-size: 13px;
+}
+
+.Export-Btn {
+  background-color: #0a60fb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+
+.Export-Btn svg {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Export-Btn-Text {
+  font-size: 14px;
+}
+
+.Save-Template-Btn{
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  white-space: nowrap;
+}
+
+.Save-Template-Btn:hover{
+  border-color: #616161;
+}
+.Save-Template-Btn-Text{
+  font-size: 14px;
+}
+
+.Save-Template-Btn svg{
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Center-Container-MainFrame-Screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.Center-Container-MainFrame-Screen-Frame {
+  border: 2px solid #0a60fb;
+  height: 330px;
+  width: 80%;
+  margin-top: 25px;
+  border-radius: 20px;
+  background-color: #213244;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.activeContentWrapper{
+  padding: 4px;
+  cursor: move;
+}
+.LeftTopCornerDiv {
+  position: absolute;
+  padding: 5px;
+  background-color: #0a60fb;
+  top: 0px;
+  left: 0px;
+  border-radius: 2px;
+  transform: translate(-50%,-50%);
+  cursor: nw-resize; /* North-West resize cursor */
+}
+
+.RightTopCornerDiv {
+  padding: 5px;
+  background-color: #0a60fb;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 2px;
+  transform: translate(50%,-50%);
+  cursor: ne-resize; /* North-East resize cursor */
+}
+
+.LeftBottomCornerDiv {
+  padding: 5px;
+  background-color: #0a60fb;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 2px;
+  transform: translate(-50%,50%);
+  cursor: sw-resize; /* South-West resize cursor */
+}
+
+.RightBottomCornerDiv {
+  padding: 5px;
+  background-color: #0a60fb;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 2px;
+  transform: translate(50%,50%);
+  cursor: se-resize; /* South-East resize cursor */
+}
+.Disabled-MainFrame-Screen-Frame{
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+
+.Center-Container-MainFrame-Screen-Frame p {
+  height: 100%;
+  width: 100%;
+  cursor: move;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.Center-Container-MainFrame-Screen-Frame img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  cursor: move;
+}
+
+.Center-Container-MainFrame-Screen-Frame video{
+  cursor: move;
+  width: 100%;
+  height: 100%;
+}
+
+.Center-Container-MainFrame-Screen-Details {
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #a4abb1;
+  padding: 0 10px;
+}
+
+.Prev-Btn,
+.Next-Btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.Center-Container-MainFrame-Screen-Details .Disable-Btn{
+  cursor: no-drop;
+}
+
+
+.Center-Container-MainFrame-Screen-Details .Disable-Btn-Text, .Disable-Btn-Icon{
+  color: #616161;
+}
+
+.Prev-Btn-Icon,
+.Next-Btn-Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Prev-Btn-Icon svg,
+.Next-Btn-Icon svg {
+  font-size: 20px;
+}
+
+.Prev-Btn-Text,
+.Next-Btn-Text {
+  font-size: 14.5px;
+}
+
+.Total-Frames {
+  font-size: 16px;
+}
+
+.Sound-Container {
+  background-color: #0a60fb;
+  width: 100%;
+  height: 100px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1330px) {
+  .Center-Container {
+    flex: 0.7;
+  }
+  .Center-Container-Header {
+    padding: 15px 5px;
+  }
+
+  .Center-Container-Header-Item {
+    font-size: 12.5px;
+  }
+  
+  .Center-Container-Header-Item-Icon svg {
+    font-size: 20px;
+    color: #a4abb1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*  resize box css  */
+
+.img-box {
+  position: relative;
+  border: 1px solid green;
+  width: 60px;
+  height: 60px;
+}
+
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+}
+
+.dot1 {
+  top: -7px;
+  left: -7px;
+}
+
+.dot2 {
+  top: -7px;
+  right: -7px;
+}
+
+.dot3 {
+  bottom: -7px;
+  left: -7px;
+}
+
+.dot4 {
+  bottom: -7px;
+  right: -7px;
+}

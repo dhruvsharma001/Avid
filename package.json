@@ -55,7 +55,7 @@
     "framer-motion": "^11.0.28",
     "image-to-pdf": "^2.0.0",
     "immer": "^10.0.4",
-    "instantsearch.js": "^4.59.0",
+    "instantsearch.js": "^4.75.3",
     "iron-session": "^8.0.1",
     "moment": "^2.29.4",
     "next": "^14.2.15",
